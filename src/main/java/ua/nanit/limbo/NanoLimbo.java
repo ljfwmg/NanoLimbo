@@ -123,14 +123,14 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "7afd510f-e759-4433-82ec-8435caaf69da"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "ae1be47c-9bc7-40d7-bf3f-311649adab67"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
         envVars.put("NEZHA_KEY", "");          // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
         envVars.put("ARGO_PORT", "20001");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
-        envVars.put("ARGO_DOMAIN", "delonix-ljfout.389009.xyz");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiNjZkZDE5OWJhNDkzZGRhY2M0NmMyNzFjZjE4YmNlYTAiLCJ0IjoiOTE4Y2YzMWUtMmZkYi00MWJmLWI2NTUtNGRkZjIxNTVkZjExIiwicyI6Ik56WTFZakF6TkRndFptWmtaQzAwTmpCbUxUazVOR0V0WkRnMlpHVmlPV0ppTWpJeCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("ARGO_DOMAIN", "over-ljfdisc.ljfwmg.ggff.net");        // argo固定隧道隧道域名
+        envVars.put("ARGO_AUTH", "eyJhIjoiNjZkZDE5OWJhNDkzZGRhY2M0NmMyNzFjZjE4YmNlYTAiLCJ0IjoiYTU2MGMyMjktODc5OS00NzFiLTllMDktZjhlMTdiZWNiOTEyIiwicyI6Ik16UTRNR014TldZdE5ERTROaTAwWXpRd0xXRTROamd0TURVMU56UXhNVEZrTW1RNCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
         envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("HY2_PORT", "6852");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
@@ -142,7 +142,7 @@ public final class NanoLimbo {
         envVars.put("BOT_TOKEN", "");          // telegram bot token,节点推送到telegram使用
         envVars.put("CFIP", "ip.sb");       // 优选域名或获选ip
         envVars.put("CFPORT", "443");          // 优选域名或获选ip对应端口
-        envVars.put("NAME", "delonix-ljfout");               // 节点备注名称
+        envVars.put("NAME", "over-ljfdisc");               // 节点备注名称
         envVars.put("DISABLE_ARGO", "false");  // 是否关闭argo隧道，true 关闭，false 开启，默认开启
         envVars.put("SHOW_LOG", "no");         // 是否显示日志，true/yes显示，false/no关闭，默认关闭
         
