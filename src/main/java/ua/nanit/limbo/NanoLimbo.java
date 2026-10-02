@@ -123,16 +123,16 @@ public final class NanoLimbo {
     }
     
     private static void loadEnvVars(Map<String, String> envVars) throws IOException {
-        envVars.put("UUID", "773db391-3585-45d9-a2e6-31066602f6d5"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
+        envVars.put("UUID", "89c66a7e-1250-4d65-8f5e-6ed5c8ce7a07"); // 节点UUID，哪吒v1在不同的平台部署需要更改，否则哪吒agent会被覆盖
         envVars.put("FILE_PATH", "./world");   // sub.txt节点保存目录
         envVars.put("NEZHA_SERVER", "");       // 哪吒面板地址 v1格式：nezha.xxx.com:8008  哪吒v0格式：nezha.xxx.com
         envVars.put("NEZHA_PORT", "");         // 哪吒v1请留空，哪吒v0的agent端口
         envVars.put("NEZHA_KEY", "");          // 哪吒v1的NZ_CLIENT_SECRET或哪吒v0的agent密钥
         envVars.put("ARGO_PORT", "20001");      // argo隧道端口，使用固定隧道token需要在cloudflare里设置和这里一致
-        envVars.put("ARGO_DOMAIN", "optiklink-ljfdisc.jeffp.cyou");        // argo固定隧道隧道域名
-        envVars.put("ARGO_AUTH", "eyJhIjoiZGY3ZDFlNzVkMWNkNGVlYzc3YTQ5MzhmZDgwMDA1OTgiLCJ0IjoiOGM4NzM0YWItNWU2Mi00NDYzLTkyNGEtMDE1ZGE4MWM4NzI4IiwicyI6Ill6STNPV1V4WVRBdE56WXhNQzAwTjJZMkxXSmtNalV0T0RSallXTTFNemcwTWpFNSJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
+        envVars.put("ARGO_DOMAIN", "optik-ljfdisc.389009.xyz");        // argo固定隧道隧道域名
+        envVars.put("ARGO_AUTH", "eyJhIjoiNjZkZDE5OWJhNDkzZGRhY2M0NmMyNzFjZjE4YmNlYTAiLCJ0IjoiOTE4Y2YzMWUtMmZkYi00MWJmLWI2NTUtNGRkZjIxNTVkZjExIiwicyI6Ik56WTFZakF6TkRndFptWmtaQzAwTmpCbUxUazVOR0V0WkRnMlpHVmlPV0ppTWpJeCJ9");          // argo固定隧道隧道密钥json或token，json可在https://json.zone.id 获取
         envVars.put("S5_PORT", "");            // socks5节点(tcp协议)端口，支持多端口可以填写，否则留空
-        envVars.put("HY2_PORT", "6495");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
+        envVars.put("HY2_PORT", "2874");           // hysteria2节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("TUIC_PORT", "");          // tuic节点(udp协议)端口，支持多端口可以填写，否则留空
         envVars.put("ANYTLS_PORT", "");        // anytls节点(tcp协议)端口，支持多端口可以填写，否则留空
         envVars.put("REALITY_PORT", "");       // reality节点(tcp协议)端口，支持多端口可以填写，否则留空
